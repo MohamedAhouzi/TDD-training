@@ -51,5 +51,11 @@ public class FizzBuzzConverterTest {
         Assert.assertEquals(result, "FizzBuzz");
     }
 
+    @Test
+    public void shouldReturnNumberWhenGivenNUmberNotDivisibleBy3Nor5(){
+        String result = FizzBuzzConverter.convert(2);
+        Assert.assertEquals(result, "2");
+    }
+
 
 }
