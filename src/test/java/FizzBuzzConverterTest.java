@@ -9,4 +9,11 @@ public class FizzBuzzConverterTest {
         String result = FizzBuzzConverter.convert(1);
         Assert.assertEquals(result, "1");
     }
+
+    @Test
+    public void shouldReturnFizzWhenTheInputIs3() {
+
+        String result = FizzBuzzConverter.convert(3);
+        Assert.assertEquals(result, "Fizz");
+    }
 }
