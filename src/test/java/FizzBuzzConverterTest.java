@@ -16,4 +16,10 @@ public class FizzBuzzConverterTest {
         String result = FizzBuzzConverter.convert(3);
         Assert.assertEquals(result, "Fizz");
     }
+    @Test
+    public void shouldReturnBuzzWhenTheInputIs5() {
+
+        String result = FizzBuzzConverter.convert(5);
+        Assert.assertEquals(result, "Buzz");
+    }
 }
