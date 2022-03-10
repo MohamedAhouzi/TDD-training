@@ -28,6 +28,12 @@ public class FizzBuzzListFactoryTest {
         List list = Arrays.asList(1,2);
         assertEquals(list,fizzBuzzListFactory.transformNumberToList(2));
     }
+    @Test
+    public void shouldReturnListOfNumbersBetween1AndGivenNumber(){
+        FizzBuzzListFactory fizzBuzzListFactory = new FizzBuzzListFactory();
+        List list = Arrays.asList(1,2,3,4);
+        assertEquals(list,fizzBuzzListFactory.transformNumberToList(4));
+    }
 
 
 

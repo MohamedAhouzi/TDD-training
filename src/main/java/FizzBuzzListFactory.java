@@ -5,9 +5,12 @@ import java.util.List;
 public class FizzBuzzListFactory {
     public List transformNumberToList(int number){
         if(number < 1) throw new IllegalArgumentException("number should not be negative");
-        if(number == 1)
-        return new ArrayList(Arrays.asList(1));
-        return new ArrayList(Arrays.asList(1,2));
+        List<Integer> listOfNumbers = new ArrayList<>();
+
+        for (int i = 1;i<=number;i++){
+            listOfNumbers.add(i);
+        }
+        return listOfNumbers;
 
     }
 }
