@@ -44,5 +44,12 @@ public class FizzBuzzConverterTest {
         Assert.assertEquals(result, "FizzBuzz");
     }
 
+    @Test
+    public void shouldReturnFizzBuzzWhenTheInputIsMultipleOf3And5() {
+
+        String result = FizzBuzzConverter.convert(45);
+        Assert.assertEquals(result, "FizzBuzz");
+    }
+
 
 }
