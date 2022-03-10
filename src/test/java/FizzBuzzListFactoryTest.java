@@ -22,6 +22,15 @@ public class FizzBuzzListFactoryTest {
         assertEquals(list,fizzBuzzListFactory.transformNumberToList(1));
     }
 
+    @Test
+    public void shouldReturnListOf1And2WhenGivenIs2(){
+        FizzBuzzListFactory fizzBuzzListFactory = new FizzBuzzListFactory();
+        List list = Arrays.asList(1,2);
+        assertEquals(list,fizzBuzzListFactory.transformNumberToList(2));
+    }
+
+
+
 
 
 
