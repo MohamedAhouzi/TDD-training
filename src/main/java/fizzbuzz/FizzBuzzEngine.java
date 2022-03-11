@@ -2,7 +2,9 @@ package fizzbuzz;
 
 public class FizzBuzzEngine {
     public void show(int number) {
-        System.out.println("1=>1");
+       for(int i = 1;i<=number;i++){
+           System.out.println(i+"=>"+i);
+       }
 
     }
 }

@@ -22,4 +22,12 @@ public class FizzBuzzEngineTest {
 
 
     }
+    @Test
+    public void shouldPrint1_1And2_2WhenGiven2(){
+
+        fizzBuzzEngine.show(2);
+        assertEquals("1=>1\r\n2=>2", systemOutRule.getLog().trim());
+
+
+    }
 }
