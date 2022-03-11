@@ -8,7 +8,7 @@ public class FizzBuzzEngine {
     public void show(int number) {
         List<Integer> numbers = fizzBuzzListFactory.transformNumberToList(number);
        for(Integer i : numbers){
-           String convertedNumber =fizzBuzzConverter.convert(i);
+           String convertedNumber = fizzBuzzConverter.convert(i);
            System.out.println(i+"=>"+convertedNumber);
        }
 
