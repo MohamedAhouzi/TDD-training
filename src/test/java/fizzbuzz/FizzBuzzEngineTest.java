@@ -28,6 +28,12 @@ public class FizzBuzzEngineTest {
         fizzBuzzEngine.show(2);
         assertEquals("1=>1\r\n2=>2", systemOutRule.getLog().trim());
 
+    }
+    @Test
+    public void shouldPrint1_1And2_2And3_FizzWhenGiven3(){
+
+        fizzBuzzEngine.show(3);
+        assertEquals("1=>1\r\n2=>2\r\n3=>Fizz", systemOutRule.getLog().trim());
 
     }
 }

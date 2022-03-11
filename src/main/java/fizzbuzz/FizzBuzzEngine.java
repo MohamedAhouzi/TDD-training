@@ -1,9 +1,15 @@
 package fizzbuzz;
 
+import java.util.List;
+
 public class FizzBuzzEngine {
+    FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
+    FizzBuzzListFactory fizzBuzzListFactory = new FizzBuzzListFactory();
     public void show(int number) {
-       for(int i = 1;i<=number;i++){
-           System.out.println(i+"=>"+i);
+        List<Integer> numbers = fizzBuzzListFactory.transformNumberToList(number);
+       for(Integer i : numbers){
+           String convertedNumber =fizzBuzzConverter.convert(i);
+           System.out.println(i+"=>"+convertedNumber);
        }
 
     }
